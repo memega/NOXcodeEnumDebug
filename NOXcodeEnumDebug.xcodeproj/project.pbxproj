@@ -10,6 +10,8 @@
 		DE07A4AE1AFDD31C00D1E7CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE07A4AD1AFDD31C00D1E7CE /* Foundation.framework */; };
 		DE07A4B31AFDD31C00D1E7CE /* NOXcodeEnumDebug.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = DE07A4B21AFDD31C00D1E7CE /* NOXcodeEnumDebug.xcscheme */; };
 		DE07A4B61AFDD31C00D1E7CE /* NOXcodeEnumDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = DE07A4B51AFDD31C00D1E7CE /* NOXcodeEnumDebug.m */; };
+		DE2074E91AFE5DA500438510 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DE2074E71AFE5DA500438510 /* LICENSE */; };
+		DE2074EA1AFE5DA500438510 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DE2074E81AFE5DA500438510 /* README.md */; };
 		DE98BA311AFDD60200472865 /* DVTFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE98BA2F1AFDD60200472865 /* DVTFoundation.framework */; };
 		DE98BA321AFDD60200472865 /* DVTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE98BA301AFDD60200472865 /* DVTKit.framework */; };
 		DE98BA351AFDD61800472865 /* IDEFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE98BA331AFDD61800472865 /* IDEFoundation.framework */; };
@@ -23,6 +25,8 @@
 		DE07A4B21AFDD31C00D1E7CE /* NOXcodeEnumDebug.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = NOXcodeEnumDebug.xcscheme; path = NOXcodeEnumDebug.xcodeproj/xcshareddata/xcschemes/NOXcodeEnumDebug.xcscheme; sourceTree = SOURCE_ROOT; };
 		DE07A4B41AFDD31C00D1E7CE /* NOXcodeEnumDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NOXcodeEnumDebug.h; sourceTree = "<group>"; };
 		DE07A4B51AFDD31C00D1E7CE /* NOXcodeEnumDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOXcodeEnumDebug.m; sourceTree = "<group>"; };
+		DE2074E71AFE5DA500438510 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DE2074E81AFE5DA500438510 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DE619F4A1AFDD36B00CBBDD5 /* XcodeHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XcodeHeaders.h; path = "Xcode Headers/XcodeHeaders.h"; sourceTree = "<group>"; };
 		DE98BA2F1AFDD60200472865 /* DVTFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTFoundation.framework; path = ../../../../Applications/Xcode.app/Contents/SharedFrameworks/DVTFoundation.framework; sourceTree = "<group>"; };
 		DE98BA301AFDD60200472865 /* DVTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTKit.framework; path = ../../../../Applications/Xcode.app/Contents/SharedFrameworks/DVTKit.framework; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		DE07A49F1AFDD31C00D1E7CE = {
 			isa = PBXGroup;
 			children = (
+				DE2074E71AFE5DA500438510 /* LICENSE */,
+				DE2074E81AFE5DA500438510 /* README.md */,
 				DE07A4AF1AFDD31C00D1E7CE /* NOXcodeEnumDebug */,
 				DE07A4AA1AFDD31C00D1E7CE /* Frameworks */,
 				DE07A4A91AFDD31C00D1E7CE /* Products */,
@@ -151,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2074E91AFE5DA500438510 /* LICENSE in Resources */,
 				DE07A4B31AFDD31C00D1E7CE /* NOXcodeEnumDebug.xcscheme in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2074EA1AFE5DA500438510 /* README.md in Sources */,
 				DE07A4B61AFDD31C00D1E7CE /* NOXcodeEnumDebug.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
