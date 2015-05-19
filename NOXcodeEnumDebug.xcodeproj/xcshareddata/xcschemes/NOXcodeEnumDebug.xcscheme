@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "890A4B3E171F031300AFE577"
+               BlueprintIdentifier = "DE07A4A71AFDD31C00D1E7CE"
                BuildableName = "NOXcodeEnumDebug.xcplugin"
                BlueprintName = "NOXcodeEnumDebug"
                ReferencedContainer = "container:NOXcodeEnumDebug.xcodeproj">
@@ -56,12 +56,14 @@
       allowLocationSimulation = "NO"
       viewDebuggingEnabled = "No">
       <PathRunnable
+         runnableDebuggingMode = "0"
+         BundleIdentifier = "com.apple.dt.Xcode"
          FilePath = "/Applications/Xcode.app">
       </PathRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "890A4B3E171F031300AFE577"
+            BlueprintIdentifier = "DE07A4A71AFDD31C00D1E7CE"
             BuildableName = "NOXcodeEnumDebug.xcplugin"
             BlueprintName = "NOXcodeEnumDebug"
             ReferencedContainer = "container:NOXcodeEnumDebug.xcodeproj">

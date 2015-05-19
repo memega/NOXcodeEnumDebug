@@ -58,26 +58,27 @@ static NOXcodeEnumDebug *sharedPlugin;
 - (id)initWithBundle:(NSBundle *)plugin
 {
     if (self = [super init]) {
-        NSMenuItem *editMenuItem = [[NSApp mainMenu] itemWithTitle:@"Edit"];
-        if (editMenuItem)
-        {
-            NSInteger index = [[editMenuItem submenu] indexOfItemWithTitle:@"Convert"];
-            if (index != NSNotFound)
-            {
-                [[editMenuItem submenu] addItem:[NSMenuItem separatorItem]];
-                
-                NSMenuItem *newMenuItem = [[NSMenuItem alloc] initWithTitle:NOXcodeEnumDebugMenuItemTitle action:@selector(createNSStringFrom:) keyEquivalent:@""];
-                
-                [newMenuItem setTarget:self];
-                [[editMenuItem submenu] addItem:newMenuItem];
-                [[editMenuItem submenu] addItem:[NSMenuItem separatorItem]];
-            }
-        }
-
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidFinishLaunching:) name:
+         NSApplicationDidFinishLaunchingNotification object:[NSApplication sharedApplication ]];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(indexDidChange:) name:@"IDEIndexDidChangeNotification" object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(indexDidChange:) name:@"IDEIndexDidIndexWorkspaceNotification" object:nil];
     }
     return self;
+}
+
+- (void)applicationDidFinishLaunching:(NSNotification *)notification
+{
+    NSMenuItem *editMenuItem = [[NSApp mainMenu] itemWithTitle:@"Edit"];
+    if (editMenuItem)
+    {
+        [[editMenuItem submenu] addItem:[NSMenuItem separatorItem]];
+        
+        NSMenuItem *newMenuItem = [[NSMenuItem alloc] initWithTitle:NOXcodeEnumDebugMenuItemTitle action:@selector(createNSStringFrom:) keyEquivalent:@""];
+        
+        [newMenuItem setTarget:self];
+        [[editMenuItem submenu] addItem:newMenuItem];
+        [[editMenuItem submenu] addItem:[NSMenuItem separatorItem]];
+    }
 }
 
 - (void)dealloc
